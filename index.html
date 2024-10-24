@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Lorem Ipsum Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Generador de Lorem Ipsum Personalizado</h1>
+    
+    <label for="length">Longitud:</label>
+    <select id="length">
+        <option value="1">1 párrafo</option>
+        <option value="2">2 párrafos</option>
+        <option value="3">3 párrafos</option>
+        <option value="5">5 párrafos</option>
+        <option value="10">10 párrafos</option>
+    </select>
+
+    <label for="style">Estilo:</label>
+    <select id="style">
+        <option value="normal">Normal</option>
+        <option value="bold">Negrita</option>
+        <option value="italic">Cursiva</option>
+    </select>
+
+    <button onclick="generateLorem()">Generar Lorem Ipsum</button>
+
+    <div id="result" class="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
