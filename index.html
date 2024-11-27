@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de Lorem Ipsum Personalizado</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
-    <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <h1>Generador de Lorem Ipsum Personalizado</h1>
-      <p>Este proyecto es una herramienta web que permite generar texto de ejemplo (Lorem Ipsum) en diferentes longitudes y estilos.</p>
-    </header>
-    <main>
-      <label for="length">Longitud:</label>
-      <select id="length">
-        <option value="1">1 párrafo</option>
-        <option value="2">2 párrafos</option>
-        <option value="3">3 párrafos</option>
-        <option value="5">5 párrafos</option>
-        <option value="10">10 párrafos</option>
-      </select>
 
-      <label for="style">Estilo:</label>
-      <select id="style">
-        <option value="normal">Normal</option>
-        <option value="bold">Negrita</option>
-        <option value="italic">Cursiva</option>
-      </select>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Lorem Ipsum Personalizado</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
+</head>
 
-      <button onclick="generateLorem()">Generar Lorem Ipsum</button>
-
-      <div id="result" class="result"></div>
-    </main>
-    <footer>
-      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<body>
+  <header>
+    <h1>Generador de Lorem Ipsum Personalizado</h1>
+  </header>
+  <main>
+    <div class="container">
+      <fieldset>
+        <legend>Configuración de Lorem Ipsum</legend>
+        <p>Este proyecto es una herramienta web que permite generar texto de ejemplo (Lorem Ipsum) en diferentes longitudes
+          y estilos.</p>
+        <label for="length">Longitud:</label>
+        <select id="length">
+          <option value="1">1 párrafo</option>
+          <option value="2">2 párrafos</option>
+          <option value="3">3 párrafos</option>
+          <option value="5">5 párrafos</option>
+          <option value="10">10 párrafos</option>
+        </select>
+        <label for="style">Estilo:</label>
+        <select id="style">
+          <option value="normal">Normal</option>
+          <option value="bold">Negrita</option>
+          <option value="italic">Cursiva</option>
+        </select>
+        <button onclick="generateLorem()">Generar Lorem Ipsum</button>
+      </fieldset>
+      <fieldset>
+        <legend>Resultado</legend>
+        <div id="result" class="result">
+          <p id="result">Haz clic en el botón para generar texto de ejemplo.</p>
+        </div>
+      </fieldset>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
